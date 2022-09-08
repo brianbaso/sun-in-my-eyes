@@ -1,10 +1,16 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import rawData from '../../public/directory.json'
+import {useState} from "react";
 
 const IndexPage = () => {
+    const [data] = useState(rawData)
     return (
-        <Layout pageTitle="Home Page">
-            <p>I'm making this by following the Gatsby Tutorial.</p>
+        <Layout pageTitle="Directory">
+            <p><i>discover creatives in orlando, florida</i></p>
+                {Object.entries(data).map(([key,value], i) => (
+                    <p key={i}><b>{value["instagram"]}</b> {value["tags"]}</p>
+                ))}
         </Layout>
     )
 }

@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const AboutPage = () => {
     return (
-        <Layout pageTitle="About Me">
-            <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+        <Layout pageTitle="About">
+            <p>Sun In My Eyes is a community to bring creatives together in orlando, florida.</p>
         </Layout>
     )
 }
