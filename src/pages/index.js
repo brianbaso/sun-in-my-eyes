@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import rawData from '../../public/directory.json'
+import rawData from '../../content/directory.json'
 import {useState} from "react";
 
 const IndexPage = () => {
