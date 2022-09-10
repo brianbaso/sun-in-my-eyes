@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 const AboutPage = () => {
     return (
         <Layout pageTitle="About">
-            <p>Sun In My Eyes is a community intended to bring creatives together in orlando, florida.</p>
+            <p>Sun In My Eyes is a community intended to bring us together in orlando, florida.</p>
         </Layout>
     )
 }
