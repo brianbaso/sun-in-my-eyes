@@ -9,9 +9,8 @@ const IndexPage = () => {
     const [selected, setSelected] = useState('')
     const [key] = useState({
         "music": ["musician", "rapper", "bass", "drummer", "producer", "audio engineer", "dj", "vocalist", "guitarist"],
-        "visual": ["visual artist", "3d designer", "photographer", "videographer", "illustrator", "mixed media", "film", "fashion", "actor", "actress", "painter"],
+        "visual": ["visual artist", "3d designer", "photographer", "videographer", "illustrator", "mixed media", "film", "fashion", "actor", "actress", "painter", "tattoo"],
         "groups": ["collective", "magazine", "studio", "recording studio"],
-        "tattoo": ["tattoo"],
         "promo": ["events", "promoter"]
     })
 
@@ -49,8 +48,6 @@ const IndexPage = () => {
                         onClick={() => filterTag('visual')}>visual</button>
                 <button className={selected === 'groups' ? "cat-item selected" : "cat-item"}
                         onClick={() => filterTag('groups')}>groups</button>
-                <button className={selected === 'tattoo' ? "cat-item selected" : "cat-item"}
-                        onClick={() => filterTag('tattoo')}>tattoo</button>
                 <button className={selected === 'promo' ? "cat-item selected" : "cat-item"}
                         onClick={() => filterTag('promo')}>promo</button>
             </div>
